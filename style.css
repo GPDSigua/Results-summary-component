@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,800;1,700&display=swap');
+
+:root {
+--light-red: hsl(0, 100%, 67%);
+--orangey-yellow: hsl(39, 100%, 56%);
+--greenteal: hsl(166, 100%, 37%);
+--cobalt-blue: hsl(234, 85%, 45%);
+/* background */
+--light-slate-blue: hsl(252, 100%, 67%);
+--light-royal-blue: hsl(241, 81%, 54%);
+/* circle */
+--violet-blue : hsla(256, 72%, 46%, 1);
+--persian-blue : hsla(241, 72%, 46%, 0);
+/* Neutral */
+--White: hsl(0, 0%, 100%);
+--pale-blue: hsl(221, 100%, 96%);
+--light-lavender: hsl(241, 100%, 89%);
+--dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Hanken Grotesk";
+}
+
+p {
+    font-size: 18px;
+}
+.text-bold {
+    font-weight: 800;
+    opacity: 1;
+}
+.trasparent-title {
+    font-size: 20px;
+    opacity: 0.6;
+}
+.transparent-comment {
+    opacity: 0.6;
+  
+    margin-top: 15px;
+}
+
+.transparent {
+    opacity: 0.6;
+}
+
+.score-sec {
+    background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+    height: 450px;
+    width: 310px;
+    border-radius: 1.2rem;
+    text-align: center;
+    padding: 25px 35px 20px;
+    color: var(--White);
+}
+
+.score-circle {
+    background-image:linear-gradient(var(--violet-blue), var(--persian-blue));
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+    margin: 20px auto;
+    padding: 30px;
+}
+.score {
+    font-size: 65px;
+}
+
+.card {
+    display: flex;
+    background-color: var(--White);
+    width: 640px;
+    height: 100%;
+    margin: 200px auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 9px 10px 36px -3px rgba (0,0,0,0.42);
+    -webkit-box-shadow: 9px 10px 36px -1px rgba(0,0,0,0.42);
+    -moz-box-shadow: 9px 10px 36px -1px rgba(0,0,0,0.42); 
+}
+
+.summary-sec {
+    height: 450px;
+    width: 320px;
+    padding: 25px 35px 20px;
+    
+}
+
+.react-sec-red {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 20px;
+    padding: 12px;
+    color: var(--light-red);
+    background-color: hsla(0, 100%, 67%, 0.1);
+    border-radius:0.5rem;
+}
+
+.react-sec-yellow {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 20px;
+    padding: 12px;
+    color: var(--orangey-yellow);
+    background-color: hsla(39, 100%, 56%, 0.1);
+    border-radius:0.5rem;
+}
+
+.react-sec-green {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 20px;
+    padding: 12px;
+    color: var(--greenteal);
+    background-color: hsla(166, 100%, 37%, 0.1);
+    border-radius:0.5rem;
+}
+.react-sec-violet {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 20px;
+    padding: 12px;
+    color: var(--cobalt-blue);
+    background-color: hsla(234, 85%, 45%, 0.1);
+    border-radius:0.5rem;
+}
+
+.sum-name {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.description-name {
+    margin-left: 15px;
+}
+
+.btn {
+    color: var(--White);
+    background-color: var(--dark-gray-blue);
+    padding: 15px;
+    width: 100%;
+    border:none;
+    border-radius: 25px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3em; ;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+}
+
+@media screen and (max-width:420px) {
+    .card {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .score-sec{
+        width: 100%;
+    }
+    .summary-sec {
+        width: 100%;
+    }
+    
+}
